@@ -1,0 +1,29 @@
+aws_region      = "us-east-1"
+environment     = "dev"
+log_bucket_name = "your-log-bucket-name"
+
+s3_bucket_names = [
+  "example-bucket-1",
+  "example-bucket-2",
+  "example-bucket-3",
+]
+
+tags = {
+  Environment = "dev"
+  Project     = "terraform-s3"
+  ManagedBy   = "Terraform"
+}
+
+enable_versioning = true
+enable_encryption = true
+sse_algorithm     = "AES256"
+
+# For KMS:
+# sse_algorithm     = "aws:kms"
+# kms_master_key_id = "your-kms-key-arn"
+
+/*
+If you want KMS instead:
+sse_algorithm     = "aws:kms"
+kms_master_key_id = "arn:aws:kms:us-east-1:123456789012:key/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+*/
