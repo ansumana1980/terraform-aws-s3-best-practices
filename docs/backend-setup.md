@@ -73,7 +73,7 @@ Create a `backend.tf` file:
 ```hcl
 terraform {
   backend "s3" {
-    bucket         = "your-terraform-state-bucket-name"
+    bucket         = "your-terraform-state-bucket-name" # replace bucket with unique name
     key            = "global/s3/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true

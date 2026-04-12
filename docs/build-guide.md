@@ -29,7 +29,7 @@ Define Requirements
 •	Logging
 •	Tags
 •	Regions
-Folder Structure
+```bash
 terraform-aws-s3-best-practices/
 ├── README.md
 ├── backend.tf
@@ -39,20 +39,18 @@ terraform-aws-s3-best-practices/
 ├── outputs.tf
 ├── terraform.tfvars.example
 ├── .gitignore
-│
 ├── docs/
 │   ├── backend-setup.md
 │   ├── build-guide.md
 │   └── architecture.md
-│
 ├── modules/
 │   └── s3_bucket/
 │       ├── main.tf
 │       ├── variables.tf
 │       └── outputs.tf
-│
 └── examples/
     └── terraform.tfvars
+```
 ________________________________________
 🗄️ Phase 3: Backend Setup
 1. Create Backend Bucket (Manual)
