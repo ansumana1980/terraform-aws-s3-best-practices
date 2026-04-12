@@ -123,3 +123,5 @@ aws s3 rb s3://<bucket-name>/ --force
 ⏱️ Logs may take 15 minutes to several hours
 
 cd /mnt/c/Users/ansur/OneDrive/Desktop/Terraform-Projects
+git config --global user.email 
+git config --global user.name 
