@@ -1,0 +1,38 @@
+{
+    "Table": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "LockID",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "terraform-ansu-locks",
+        "KeySchema": [
+            {
+                "AttributeName": "LockID",
+                "KeyType": "HASH"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": "2026-04-12T14:08:25.217000-04:00",
+        "ProvisionedThroughput": {
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 0,
+            "WriteCapacityUnits": 0
+        },
+        "TableSizeBytes": 0,
+        "ItemCount": 0,
+        "TableArn": "arn:aws:dynamodb:us-east-1:234922737130:table/terraform-ansu-locks",
+        "TableId": "2920f3ff-36ea-489e-97de-493261df85ea",
+        "BillingModeSummary": {
+            "BillingMode": "PAY_PER_REQUEST",
+            "LastUpdateToPayPerRequestDateTime": "2026-04-12T14:08:25.217000-04:00"
+        },
+        "DeletionProtectionEnabled": false,
+        "WarmThroughput": {
+            "ReadUnitsPerSecond": 12000,
+            "WriteUnitsPerSecond": 4000,
+            "Status": "ACTIVE"
+        }
+    }
+}
